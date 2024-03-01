@@ -1,4 +1,5 @@
 import Cost from "./components/Cost";
+
 function App() {
 
   const costs = [
