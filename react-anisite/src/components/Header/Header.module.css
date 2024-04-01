@@ -1,0 +1,69 @@
+:root{
+    --font:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1 );
+    z-index: 10000;
+    
+}
+
+.header.scroll {
+    background-color:  rgba(0, 0, 0, 0.8);
+    transition: background-color 0.2s;
+}
+
+.header_line {
+    
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2rem;
+    
+}
+
+
+.logo_text{
+    font-family: var(--font); 
+    font-size: 1.5rem;
+}
+
+.logo_enter {
+    font-family: var(--font); 
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.nav_text{
+    margin-right: 15px;
+    font-family: var(--font); 
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: antiquewhite;
+
+}
+
+.nav_text.active {
+    font-family: var(--font); 
+    font-size: 1.2rem;
+    color: rgb(64, 128, 110);
+    
+}
+
+.navSeachEnter {
+    display: flex;
+    align-items: center;
+}
+
+.navSeachEnter div:not(:last-child){
+    padding: 15px;
+}
+

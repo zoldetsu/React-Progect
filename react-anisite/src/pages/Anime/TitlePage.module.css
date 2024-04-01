@@ -1,0 +1,59 @@
+.CardLine{
+    
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    
+    
+}
+
+.anime_container{
+    display: flex;
+    justify-content: center;
+}
+
+.animePage{
+    margin-top: 50px;
+    max-width: 1800px;
+    display: flex;
+    
+    
+    
+    
+}
+.AnimeText {
+    margin-top: 20px;
+    font-family: var(--font);
+}
+
+.animeView{
+    margin-top: 6%;
+    
+
+}
+
+
+.view_container{
+    display: flex;  
+    max-width: 1200px;
+    margin: 0 auto;
+    
+    
+}
+
+.view_container img{
+    width: 270px;
+    border-radius: 10px;
+    height: 90%;
+    margin-right: 20px;
+
+}
+
+
+
+.text_title{
+    font-size: 45px;
+    font-family: var(--font);
+}
+

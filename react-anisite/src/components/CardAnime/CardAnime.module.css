@@ -1,0 +1,76 @@
+.Card {
+    margin-top: 40px;
+    max-width: 165px;
+    height: 270px;
+    
+}
+
+.Card:not(:last-child) {
+    margin-right: 20px;
+    
+}
+
+.Card_block_img {
+    position: relative;
+    max-width: 200px;
+    max-height: 270px;
+    
+}
+
+.Card_name {
+    font-family: var(--font);
+    cursor: pointer;
+    font-weight: 300;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.Card p {
+    font-family: var(--font);
+    cursor: pointer;
+    font-weight: 300;
+    
+}
+
+.Card_block_img:hover .Card_img{
+    opacity: 0.6;
+}
+
+.text_img {
+    opacity: 0;
+    position: absolute;
+    top: 70%;
+    left: 3%;
+    font-family: var(--font);
+    font-size: 20px;
+    z-index: 1;
+    transition: opacity 0.3s linear;
+    
+}
+
+.Card_block_img:hover .text_img {
+    display: block;
+    opacity: 1;
+    
+    cursor: pointer;
+    
+    
+}
+
+.Card_img {
+    width: 165px;
+    border-radius: 10px;
+    height: 240px;
+    z-index: 2;
+    transition: opacity 0.3s linear;
+}
+
+
+
+
+@media (max-width: 1200px) {
+    .container {
+        width: 1000px;
+    }
+}
