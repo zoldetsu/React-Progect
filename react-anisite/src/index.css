@@ -33,15 +33,9 @@ body::before {
     background: rgba(0, 0, 0, 0.5); /* Черный цвет с полупрозрачностью */
 }
 
-
-
-  
-
-
 img {
     cursor: pointer;
 }
-
 
 .container {
   margin: 0 2rem;

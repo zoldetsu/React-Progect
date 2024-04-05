@@ -1,23 +1,30 @@
 .Card {
-    margin-top: 40px;
-    max-width: 165px;
-    height: 270px;
+    margin-top: 30px;
+    
+    
     
 }
 
-.Card:not(:last-child) {
-    margin-right: 20px;
-    
+.Card_img {
+    width: 100%;
+    border-radius: 10px;
+    height: 270px;
+    z-index: 2;
+    transition: opacity 0.3s linear;
+    object-fit: cover;
 }
+
 
 .Card_block_img {
     position: relative;
-    max-width: 200px;
-    max-height: 270px;
+    max-width: 100%;
+    
+    
     
 }
 
 .Card_name {
+    height: 100%;
     font-family: var(--font);
     cursor: pointer;
     font-weight: 300;
@@ -38,6 +45,7 @@
 }
 
 .text_img {
+    
     opacity: 0;
     position: absolute;
     top: 70%;
@@ -58,19 +66,20 @@
     
 }
 
-.Card_img {
-    width: 165px;
-    border-radius: 10px;
-    height: 240px;
-    z-index: 2;
-    transition: opacity 0.3s linear;
+
+
+
+
+
+@media (max-width: 1000px) {
+    .Card_img {
+        height: 300px;
+    }
 }
 
 
-
-
-@media (max-width: 1200px) {
-    .container {
-        width: 1000px;
+@media (max-width: 818px) {
+    .Card_img {
+        height: 330px;
     }
 }

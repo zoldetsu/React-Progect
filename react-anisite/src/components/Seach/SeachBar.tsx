@@ -1,5 +1,5 @@
 import MyInput from "../../UI/Input/MyInput";
-import classes from "../../pages/Поиск/Seach.module.css"
+import classes from "./SeachBar.module.css"
 import {useState } from "react";
 import { AnimeTitle } from '../../poster'
 

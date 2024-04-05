@@ -11,7 +11,6 @@ export default function TitleView() {
 
     return (
         <div className={classes.animeView}>
-
             {
                 loading 
                 ?
@@ -29,7 +28,6 @@ export default function TitleView() {
                     Аниме с id {id} не найдено
                 </div>
             )}
-
                 </div>
                 :
                 <div style={{display: 'flex', alignItems: 'center', marginTop: '15%', justifyContent: 'center'}}>
@@ -37,8 +35,6 @@ export default function TitleView() {
                 </div>
                 
             }
-
-            
         </div>
     );
 }

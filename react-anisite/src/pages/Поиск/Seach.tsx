@@ -1,4 +1,4 @@
-// import { Link } from "react-router-dom";
+    // import { Link } from "react-router-dom";
 import classes from "./Seach.module.css"
 import { useState } from "react";
 import SeachBar from "../../components/Seach/SeachBar";
@@ -21,17 +21,11 @@ export default function Seach() {
             <div className={classes.Seach_container}>
                 <SeachBar setResults = {setResults}/>
                 <SeachResultList results={results}/>
-
-            </div>
-                    
+            </div>                 
             :
-
-            <MyLoader/>
-            
+            <MyLoader/>        
             }
-                
-            
-            
+
         </div>
     )
     

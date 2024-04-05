@@ -9,13 +9,12 @@ import MyLoader from '../../UI/Loader/MyLoader.tsx';
 export default function AnimePage() {
     const [loading] = useLoading()
     const router = useNavigate()
-    
     const rows = [];
-    
+
     for (let i = 0; i < AnimeTitle.length; i += 1) {
         rows[i] = AnimeTitle[i]
     }
-
+    
     return (
         <div className={classes.anime_container}>
             <div className={classes.animePage}>
@@ -30,24 +29,16 @@ export default function AnimePage() {
                             title={poster.title} 
                             status={poster.status} 
                             img={poster.path}
-                            
                         >   
                         </CardAnime>      
-                    ))} 
-
+                ))}
                 </div>
-                               
-
             </div>
-
             : 
             <div style={{display: 'flex', alignItems: 'center', marginTop: '15%', justifyContent: 'center'}}>
                 <MyLoader/>
             </div>
-            
-
-            }
-            
+            }   
         </div>
         </div>
         
