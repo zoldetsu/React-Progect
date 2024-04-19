@@ -1,10 +1,10 @@
-.MyButton{
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 15px;
-    padding: 5px 15px;
-    color: teal;
-    font-size: 14px;
-    background: transparent;
-    border: 1px solid teal;
-    cursor: pointer;
+.MyButton {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+  padding: 10px 15px;
+  color: teal;
+  font-size: 14px;
+  background: transparent;
+  border: 1px solid teal;
+  cursor: pointer;
 }

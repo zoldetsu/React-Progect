@@ -1,0 +1,19 @@
+.anime_container {
+  margin: 50px;
+
+  .animePage {
+    margin-top: 50px;
+
+    .AnimeText {
+      margin-top: 60px;
+      font-family: var(--font);
+    }
+
+    .CardLine {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(165px, 1fr));
+      grid-auto-rows: auto;
+      grid-gap: 20px;
+    }
+  }
+}

@@ -23,3 +23,29 @@ const func3 = (number,age) => {
 
 
 console.log(func3(15,20));
+
+
+export default function Button( {children, onClick, isActive} ) {
+    // let classes = "button"
+
+    // if (isActive) classes += ' active' 
+    
+    return <button className={isActive ? "button active" : 'button'} onClick={onClick}>{children}</button>
+}
+
+
+export default function TabSelection({ active, onChange }) {
+    return (
+        <section style={{ marginBottom: "1rem" }}>
+            <Button isActive={active === "main"} onClick={() => onChange('main')}>
+                Главная
+            </Button>
+            <Button isActive={active === "feedback"} onClick={() => onChange('feedback')}>
+                Обратная связь
+            </Button>
+        </section>
+        
+    )}
+
+    <TabSelection active={tab} onChange={(corrent) => check(corrent)}/>
+    onClick={() => ('main') => check('main')}

@@ -1,15 +1,9 @@
-
-.Seach{
-    display: flex;
-    justify-content: center ;
-    margin-top: 14rem;
+.Seach {
+  display: flex;
+  justify-content: center;
+  margin-top: 14rem;
 }
 
-
-.Seach_container{
-    width: 500px;  
+.Seach_container {
+  width: 500px;
 }
-
-
-
-

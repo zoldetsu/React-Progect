@@ -1,0 +1,40 @@
+:root {
+  --color_text: rgb(195, 195, 195);
+}
+
+.animeView {
+  margin-top: 6%;
+}
+
+.view_container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.view_container img {
+  width: 260px;
+  border-radius: 10px;
+  height: 90%;
+  margin-right: 20px;
+}
+
+.text_title {
+  font-size: 45px;
+  font-family: var(--font);
+}
+
+.discription_text {
+  color: var(--color_text);
+  margin-top: 15px;
+  font-family: var(--font);
+  text-align: justify;
+}
+
+.discription {
+  color: var(--color_text);
+  font-family: var(--font);
+}
+
+.status {
+  font-family: var(--font);
+}

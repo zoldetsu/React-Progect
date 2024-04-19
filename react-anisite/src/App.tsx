@@ -1,26 +1,38 @@
-import AnimePage from './pages/Anime/TitlePage'
-import Headers from './components/Header/Headers'
-import { Route, Routes } from 'react-router-dom'
-import DoramaPage from './pages/Dorama/DoramaPage'
-import Sign from './pages/Авторизация/Sign'
-import './index.css'
-import Seach from './pages/Поиск/Seach'
-import AnimeTitle from './pages/CertainAnime/TitleView'
+import Headers from "./components/Header/Headers";
+import "./index.css";
+import AppRouter from "./components/AppRouter";
+import { BrowserRouter } from "react-router-dom";
+import { AuthContext } from "./context";
+import { useState } from "react";
+import { AnimeTitle } from "./poster";
+import { iPerson, iPosts } from "./types/types";
 
 function App() {
+  const [isAuth, setIsAuth] = useState<boolean>(false);
+  const [isAdmin, setIsAdmin] = useState<boolean>(false);
+  const [isPerson, setIsPerson] = useState<iPerson>({} as iPerson);
+  const [posts, setPosts] = useState<iPosts[]>(AnimeTitle);
+
   return (
     <div>
-      <Headers/>
-      <Routes>
-      <Route path='/seach' element={<Seach/>}/>
-        <Route path='/sign' element={<Sign/>}/>
-        <Route path='/anime' element={<AnimePage/>}/>
-        <Route path='/' element={<AnimePage/>}/>
-        <Route path='/dorama' element={<DoramaPage/>}/>
-        <Route path="/Anime/:id" element={<AnimeTitle/>}/>
-      </Routes>
-        
+      <AuthContext.Provider
+        value={{
+          posts,
+          isAuth,
+          isAdmin,
+          isPerson,
+          setPosts,
+          setIsAuth,
+          setIsAdmin,
+          setIsPerson,
+        }}
+      >
+        <BrowserRouter>
+          <Headers />
+          <AppRouter />
+        </BrowserRouter>
+      </AuthContext.Provider>
     </div>
-  )
+  );
 }
-export default App
+export default App;

@@ -1,0 +1,33 @@
+.adminPage {
+  display: flex;
+  justify-content: center;
+  margin-top: 15rem;
+}
+
+.pageContainer {
+  width: 500px;
+  text-align: center;
+}
+
+.text_header {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+
+.text_heading {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.add_button {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+  padding: 10px 15px;
+  color: teal;
+  font-size: 14px;
+  background: transparent;
+  border: 1px solid teal;
+  cursor: pointer;
+}
