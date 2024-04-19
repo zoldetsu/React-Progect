@@ -1,7 +1,7 @@
 .adminPage {
   display: flex;
   justify-content: center;
-  margin-top: 15rem;
+  margin-top: 10rem;
 }
 
 .pageContainer {
@@ -17,8 +17,8 @@
 
 .text_heading {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-top: 30px;
 }
 
 .add_button {
