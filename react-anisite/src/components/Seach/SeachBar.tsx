@@ -7,7 +7,6 @@ import { iSeach } from "../../types/types";
 export default function SeachBar({ setResults }: iSeach) {
   const [input, setInput] = useState("");
   const { posts } = useContext(AuthContext);
-  console.log(input);
 
   const ResultsInput = (value: string) => {
     const results = posts.filter((anime) => {
@@ -15,7 +14,7 @@ export default function SeachBar({ setResults }: iSeach) {
         value &&
         anime &&
         anime.title &&
-        anime.title.toLocaleLowerCase().includes(value)
+        anime.title.toLocaleLowerCase().includes(value.toLocaleLowerCase())
       );
     });
     setResults(results);
@@ -28,8 +27,8 @@ export default function SeachBar({ setResults }: iSeach) {
   return (
     <div>
       <div className={classes.Seach_inner}>
-        <h1>Поиск</h1>
         <MyInput
+          placeholder="Поиск"
           typ="text"
           value={input}
           setInput={(e) => handleChange(e.target.value)}

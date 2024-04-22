@@ -1,9 +1,9 @@
 import { useContext } from "react";
 import { AuthContext } from "../../context";
 import classes from "./PersonPage.module.scss";
-import InfoBlockPerson from "../../components/InfoBlockPerson/InfoBlockPerson";
-import InfoBlockWall from "../../components/InfoBlockWall/InfoBlockWall";
-import InfoBlockFriends from "../../components/InfoBlockFriends/InfoBlockFriends";
+import InfoBlockPerson from "../../components/UserPage/InfoBlockPerson/InfoBlockPerson";
+import InfoBlockWall from "../../components/UserPage/InfoBlockWall/InfoBlockWall";
+import InfoBlockFriends from "../../components/UserPage/InfoBlockFriends/InfoBlockFriends";
 
 export default function PersonPage() {
   const { isPerson } = useContext(AuthContext);

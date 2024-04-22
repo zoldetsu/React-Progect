@@ -4,3 +4,11 @@
   margin-top: 15%;
   justify-content: center;
 }
+
+.button {
+  width: 200px;
+  height: 200px;
+  background-color: cadetblue;
+  color: blanchedalmond;
+  cursor: pointer;
+}

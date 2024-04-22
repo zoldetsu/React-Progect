@@ -13,6 +13,7 @@ export default function Seach() {
 
   return (
     <div className={classes.Seach}>
+      <h1>Поиск</h1>
       {loading ? (
         <div className={classes.Seach_container}>
           <SeachBar setResults={setResults} results={[]} />

@@ -1,7 +1,14 @@
 .Seach {
   display: flex;
-  justify-content: center;
+
+  flex-direction: column;
   margin-top: 14rem;
+  align-items: center;
+}
+
+.Seach h1 {
+  margin-bottom: 19px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .Seach_container {

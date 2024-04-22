@@ -1,5 +1,5 @@
 import MyInput from "../../UI/Input/MyInput";
-import classes from "./Sign.module.css";
+import classes from "./Sign.module.scss";
 import MyLoader from "../../UI/Loader/MyLoader";
 import { useLoading } from "../../hooks/useLoading";
 import { useContext, useEffect, useState } from "react";
@@ -47,16 +47,23 @@ export default function Sign() {
       {loading ? (
         <div className={classes.sign_container}>
           <h1>Добро пожаловать</h1>
-          <MyInput
-            typ="text"
-            value={sign.login}
-            setInput={(e) => setSign({ ...sign, login: e.target.value })}
-          />
-          <MyInput
-            typ="password"
-            value={sign.password}
-            setInput={(e) => setSign({ ...sign, password: e.target.value })}
-          />
+          <div className={classes.input}>
+            <MyInput
+              placeholder="Логин"
+              typ="text"
+              value={sign.login}
+              setInput={(e) => setSign({ ...sign, login: e.target.value })}
+            />
+          </div>
+
+          <div className={classes.input}>
+            <MyInput
+              placeholder="Пароль"
+              typ="password"
+              value={sign.password}
+              setInput={(e) => setSign({ ...sign, password: e.target.value })}
+            />
+          </div>
 
           <div onClick={handleVerify} className={classes.sign_button}>
             <div className={classes.sign_text}>Войти</div>

@@ -22,7 +22,6 @@ export default function AdminPage() {
       console.log(file);
       const imageUrl = URL.createObjectURL(file);
       setSelectedImage(imageUrl);
-
       setPost({ ...post, path: imageUrl });
     }
   };

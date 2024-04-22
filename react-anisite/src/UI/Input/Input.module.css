@@ -1,17 +1,18 @@
-
 .MyInput {
-    
-    width: 100%;
-    padding: 10px 15px;
-    border: 1px solid rgb(0, 0, 0);
-    margin-top: 0px;
-    background: #5d5d5d;
-    color: aliceblue;
-    border-radius: 10px;
-     
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid rgb(0, 0, 0);
+  margin-top: 0px;
+  background: #5d5d5d;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
 }
 
-.MyInput:focus{
-    outline: none;
-    box-shadow: 0px 0px 8px #ddd;
+.MyInput::placeholder {
+  color: rgb(184, 184, 184);
+}
+
+.MyInput:focus {
+  outline: none;
+  box-shadow: 0px 0px 8px #ddd;
 }
