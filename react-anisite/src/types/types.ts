@@ -1,6 +1,17 @@
 import { Dispatch, SetStateAction } from "react";
 
+export interface iComment {
+  id: number;
+  comment: string;
+}
+
+export interface iComments {
+  user_id: number;
+  comments: iComment[];
+}
+
 export interface iPerson {
+  id: number;
   name: string;
   psw: string;
   admin: boolean;

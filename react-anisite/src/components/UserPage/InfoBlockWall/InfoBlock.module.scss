@@ -5,8 +5,8 @@
   margin: 16px 15px;
 
   .block_fall {
+    position: relative;
     margin-top: 20px;
-    transition: 1s;
   }
   .button_line {
     display: flex;
@@ -16,7 +16,7 @@
       font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
       border: 1px solid #dddddd;
       border-radius: 10px;
-      background: transparent;
+
       padding: 10px 15px;
       cursor: pointer;
       transition: 0.1s;

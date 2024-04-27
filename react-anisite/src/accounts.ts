@@ -1,16 +1,18 @@
 export const Accounts = [
   {
+    id: 1,
     name: "Nazar",
     psw: "1234",
     admin: true,
-    avatar: "../../../public/AnimeAvatar/jj.jpg",
-    banner: "../../../public/AnimeImges/mar.jpg",
+    avatar: "AnimeAvatar/jj.jpg",
+    banner: "AnimeImges/mar.jpg",
   },
   {
+    id: 2,
     name: "Rom",
     psw: "1234",
     admin: false,
-    avatar: "../../../public/AnimeAvatar/Rom.jpg",
-    banner: "../../../public/AnimeImges/Rom.jpg",
+    avatar: "AnimeAvatar/Rom.jpg",
+    banner: "AnimeImges/Rom.jpg",
   },
 ];

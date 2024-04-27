@@ -7,6 +7,18 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
+::-webkit-scrollbar {
+  display: none; /* Скрывает полосы прокрутки для браузеров на основе WebKit (Chrome, Safari) */
+}
+
+::-moz-scrollbar {
+  display: none; /* Скрывает полосы прокрутки для браузеров на основе Gecko (Firefox) */
+}
+
+::-ms-scrollbar {
+  display: none; /* Скрывает полосы прокрутки для браузеров на основе Trident (Internet Explorer) */
+}
+
 * {
   margin: 0;
   padding: 0;

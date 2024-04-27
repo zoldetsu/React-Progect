@@ -11,7 +11,7 @@ function App() {
     
     <BrowserRouter> 
     <HeaderUp/>
-        <AppRouter/>  
+    <AppRouter/>  
     </BrowserRouter>
   )
 }
