@@ -1,25 +1,14 @@
-import { iTodos } from "../types/types";
+import { useSelector } from "react-redux";
 import TodoItem from "./TodoItem";
+import { iTodos } from "../types/types";
 
-interface TodoItem {
-  todos: iTodos[];
-  toggleTodoComplited: Function;
-  deleteTodo: Function;
-}
+export default function TodoList({}) {
+  const todos: iTodos[] = useSelector((state) => state.todos2.todos1);
 
-export default function TodoList({
-  todos,
-  toggleTodoComplited,
-  deleteTodo,
-}: TodoItem) {
   return (
     <ul>
       {todos.map((todo) => (
-        <TodoItem
-          todo={todo}
-          toggleTodoComplited={toggleTodoComplited}
-          deleteTodo={deleteTodo}
-        />
+        <TodoItem key={todo.id} {...todo} />
       ))}
     </ul>
   );

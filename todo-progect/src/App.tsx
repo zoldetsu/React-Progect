@@ -1,57 +1,22 @@
 import { useState } from "react";
 import "./App.css";
+import { useDispatch } from "react-redux";
 import TodoList from "./components/TodoList";
 import InputField from "./components/InputField";
-
-interface iTodos {
-  id: string;
-  text: string;
-  complited: boolean;
-}
+import { addTodo } from "./store/todoSlice";
 
 function App() {
-  const [todos, setTodos] = useState([] as iTodos[]);
   const [text, setText] = useState("");
+  const dispatch = useDispatch();
 
-  const addTodo = () => {
-    if (text.trim().length) {
-      setTodos([
-        ...todos,
-        {
-          id: new Date().toISOString(),
-          text,
-          complited: false,
-        },
-      ]);
-    }
-  };
-
-  const deleteTodo = (todoId: string) => {
-    setTodos(todos.filter((todo) => todo.id !== todoId));
-  };
-
-  const toggleTodoComplited = (todoId: string) => {
-    setTodos(
-      todos.filter((todo) => {
-        if (todo.id !== todoId) return todo;
-
-        todo.complited = !todo.complited;
-        return {
-          ...todo,
-          complited: !todo.complited,
-        };
-      })
-    );
+  const addTask = () => {
+    dispatch(addTodo(text)), setText("");
   };
 
   return (
     <div className="App">
-      <InputField text={text} handleInput={setText} handleSubmit={addTodo} />
-      <TodoList
-        todos={todos}
-        deleteTodo={deleteTodo}
-        toggleTodoComplited={toggleTodoComplited}
-      />
+      <InputField text={text} handleInput={setText} handleSubmit={addTask} />
+      <TodoList />
     </div>
   );
 }
