@@ -1,0 +1,12 @@
+.Regsiter {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  .register_container {
+    margin-top: 15rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}

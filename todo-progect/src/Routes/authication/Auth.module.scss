@@ -1,0 +1,12 @@
+.Auth {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  .auth_container {
+    margin-top: 15rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}

@@ -1,0 +1,24 @@
+.delete {
+  font-size: 30px;
+  color: red;
+  cursor: pointer;
+  display: flex;
+  position: absolute;
+  right: 0;
+}
+
+.li {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 5px;
+  width: 100%;
+  padding: 0px 10px;
+  position: relative;
+  height: 50px;
+  border: 1px solid rgb(255, 222, 222);
+  background-color: rgb(220, 226, 249);
+  border-radius: 10px;
+}
+
+.input {
+  scale: 1.7;
+}

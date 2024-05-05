@@ -1,23 +1,17 @@
-import { useState } from "react";
 import "./App.css";
-import { useDispatch } from "react-redux";
-import TodoList from "./components/TodoList";
-import InputField from "./components/InputField";
-import { addTodo } from "./store/todoSlice";
+
+import { Route, Routes } from "react-router-dom";
+import Auth from "./Routes/authication/Auth";
+import TodoPage from "./Routes/todo/TodoPage";
+import RegisterPage from "./Routes/Register/RegisterPage";
 
 function App() {
-  const [text, setText] = useState("");
-  const dispatch = useDispatch();
-
-  const addTask = () => {
-    dispatch(addTodo(text)), setText("");
-  };
-
   return (
-    <div className="App">
-      <InputField text={text} handleInput={setText} handleSubmit={addTask} />
-      <TodoList />
-    </div>
+    <Routes>
+      <Route path="/login" element={<Auth />} />
+      <Route path="/" element={<TodoPage />} />
+      <Route path="/register" element={<RegisterPage />} />
+    </Routes>
   );
 }
 

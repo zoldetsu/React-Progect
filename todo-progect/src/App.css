@@ -1,27 +1,26 @@
 .App {
-  text-align: center;
-  align-items: center;
 }
 
 ul {
+  margin-top: 15px;
   list-style: none;
   text-decoration: none;
+  padding: 0px;
 }
 
 li {
   display: flex;
-  justify-content: center;
+
   text-decoration: none;
   align-items: center;
   gap: 0.5rem;
 }
 
-.delete {
-  font-size: 30px;
-  color: red;
-  cursor: pointer;
-}
-
 input:checked + span {
   text-decoration: line-through;
+}
+
+.todo_container {
+  max-width: 500px;
+  margin: 0 auto;
 }
