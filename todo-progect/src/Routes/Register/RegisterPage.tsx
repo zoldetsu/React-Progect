@@ -9,8 +9,10 @@ export default function RegisterPage() {
         <div>Registration</div>
         <SignUp />
         <div>
-          {" "}
-          or <Link to="/login">Login</Link>
+          or{" "}
+          <Link className={classes.link} to="/login">
+            Login
+          </Link>
         </div>
       </div>
     </div>

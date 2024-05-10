@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import classes from "./Form.module.scss";
 type Form = {
   title: string;
   handleClick: (email: string, password: string) => void;
@@ -10,21 +10,28 @@ export default function Form({ title, handleClick }: Form) {
   const [pass, setPass] = useState("");
 
   return (
-    <div>
+    <div className={classes.form}>
       <input
+        className={classes.input}
         value={email}
-        type="email"
+        type="Email"
         onChange={(e) => setEmail(e.target.value)}
         placeholder="email"
       />
 
       <input
+        className={classes.input}
         value={pass}
-        type="password"
+        type="Password"
         onChange={(e) => setPass(e.target.value)}
         placeholder="password"
       />
-      <button onClick={() => handleClick(email, pass)}>{title}</button>
+      <button
+        className={classes.button}
+        onClick={() => handleClick(email, pass)}
+      >
+        {title}
+      </button>
     </div>
   );
 }

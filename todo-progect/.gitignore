@@ -11,8 +11,10 @@ node_modules
 dist
 dist-ssr
 *.local
+../react-anisite/
 
 # Editor directories and files
+../react-anisite/
 .vscode/*
 !.vscode/extensions.json
 .idea

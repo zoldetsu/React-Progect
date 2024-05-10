@@ -5,6 +5,7 @@ export default function Headers() {
   const dispatch = useDispatch();
 
   const HandleRemove = () => {
+    localStorage.removeItem("account");
     dispatch(removeUser());
   };
 

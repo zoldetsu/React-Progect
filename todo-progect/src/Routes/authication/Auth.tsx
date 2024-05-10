@@ -9,8 +9,10 @@ export default function Auth() {
         <div>Login</div>
         <Login />
         <div>
-          {" "}
-          or <Link to="/register">Register</Link>
+          or{" "}
+          <Link className={classes.link} to="/register">
+            Register
+          </Link>
         </div>
       </div>
     </div>
