@@ -1,0 +1,33 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  .input {
+    margin-top: 10px;
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    border: 2px solid rgb(153, 131, 198);
+    padding: 0px 10px;
+  }
+
+  &:focus {
+    outline: 0;
+    border: 1px solid rgb(216, 153, 255);
+  }
+
+  .button {
+    margin-top: 15px;
+    background: transparent;
+    height: 35px;
+    border-radius: 10px;
+    border: 1px solid rgb(61, 48, 69);
+    cursor: pointer;
+    transition: 0.1s;
+
+    &:hover {
+      background-color: rgb(89, 85, 115);
+      color: aliceblue;
+    }
+  }
+}

@@ -4,7 +4,7 @@ import { useAppDispatch } from "../hooks/hook";
 import { useDispatch } from "react-redux";
 import { setUser } from "../store/userSlice";
 import { useNavigate } from "react-router-dom";
-
+import { addStorage } from "../utils/localStorages";
 export default function SignUp() {
   const despatch = useAppDispatch();
   const navigate = useNavigate();
@@ -12,9 +12,9 @@ export default function SignUp() {
     const auth = getAuth();
     createUserWithEmailAndPassword(auth, email, password)
       .then(({ user }) => {
-        console.log(user);
+        // addStorage(email, password, user.uid, user.refreshToken);
         despatch(
-          setUser({ email: user.email, id: user.id, token: user.accessToken })
+          setUser({ email: user.email, id: user.uid, token: user.refreshToken })
         );
         navigate("/");
       })
